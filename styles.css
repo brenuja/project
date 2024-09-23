@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="email"]:focus,
+input[type="url"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* alert page  */
+
+/* Container for the checkboxes */
+/* Align checkboxes in a single row */
+.checkbox-group {
+  display: inline-flex; /* Align items horizontally */
+  gap: 15px; /* Space between each checkbox-label pair */
+}
+
+.checkbox-group label {
+  margin-right: 10px; /* Space between checkbox and its label */
+  white-space: nowrap; /* Prevent labels from wrapping to the next line */
+}
+
+
+/* Style for the form container */
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the status container */
+.status-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the status box */
+.status-box {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+/* Blinking circle */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28a745; /* Green color */
+    animation: blink 1s infinite; /* Blinking animation */
+    margin: 10px auto;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: #28a745;
+    }
+    50% {
+        background-color: #50d060;
+    }
+}
+
+/* Align status text and circle */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-indicator .circle {
+    margin-right: 15px;
+}
